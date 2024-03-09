@@ -265,7 +265,6 @@ main .title{
 }
 
 .dokter {
-    background-color: whitesmoke;
     padding-top: 10%;
     border-radius: 15px;
     width: 390px;
@@ -273,7 +272,13 @@ main .title{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+    /* background-position-x: center;
+    background-position-y: center; */
+    background-color: #3279AF;
+    
 }
+
 
 /* .dokter a{
     text-decoration: none;
