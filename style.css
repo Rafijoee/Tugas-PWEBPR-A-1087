@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 *,
 *::before,
 *::after{
@@ -8,15 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-body, html{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-header .nav-container{
-    width: 100vw;
+/* Navar */
+.navbar{
+    width: 100%;
     background-color: #D9D9D9;
     height: 50px;
     display: flex;
@@ -25,13 +17,12 @@ header .nav-container{
     gap: 40px;
     transition: all 0.3s ease-in-out;
 }
-
-header .nav-container a{
+.navbar a{
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
-
+/* Batas Navbar */
 main{
     display: flex;
     justify-content: center;
@@ -41,53 +32,42 @@ main{
     transition: all 0.3s ease-in-out;
 }
 
-main .title{
+.judul{
     font-size: 30px;
     font-weight: 700;
     line-height: 60px;
 }
 
-.main-container {
-    width: 75%;
+.container {
+    width: 1280px;
+    height: auto;
     display: flex;
     flex-direction: row;
+    margin-top: -20px;
+    gap: 20px;
+    justify-content: center;
 }
-
-.main-container .first-container{
+.first-container{
     display: flex;
     flex-direction: column;
 }
-
-.main-container .first-container .tentara{
+/* Tentara */
+.tentara{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
-.main-container .first-container .tentara img{
-    height: 180px;
-    width: 180px;
-    margin-top: -15px;
-}
-
-.main-container .first-container .tentara .layout-tentara{
+.layout-tentara{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
-
-.main-container .first-container .tentara .layout-tentara h5{
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.main-container .first-container .tentara .layout-tentara p{
+.layout-tentara p{
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 25px;
 }
-
-.main-container .first-container .tentara .layout-tentara a{
+.layout-tentara a{
     text-decoration: none;
     color: white;
     font-size: 15px;
@@ -99,30 +79,26 @@ main .title{
     border-radius: 25px;
     margin-bottom: -20px;
 }
-
-.main-container .first-container .tentara .bg-tentara{
+.bg-tentara{
     height: 120px;
     width: 400px;
     background-color: #D5FFDD;
     position: absolute;
     z-index: -1;
-    top: 185px;
+    top: 165px;
     border-radius: 15px;
 }
 
-.main-container .first-container .other-first{
+.kiri-bawah{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
 }
-
-.main-container .first-container .other-first .other-second{
+/* Kiri bawah */
+.kiri{
     display: flex;
     flex-direction: column;
     margin-left: 90px;
-}
-
-.main-container .first-container .other-first .other-second .tukang{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,15 +106,19 @@ main .title{
     margin-bottom: 20px;
     margin-top: 10px;
 }
-
-.main-container .first-container .other-first .other-second .tukang img{
-    height: 120px;
-    width: 120px;
+.tukang{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.tukang img{
     margin-top: 5px;
     margin-left : -70px;
 }
-
-.main-container .first-container .other-first .other-second .tukang a{
+.kiri-a{
     text-decoration: none;
     color: white;
     font-size: 12px;
@@ -147,23 +127,27 @@ main .title{
     width: 110px;
     background-color: #E29A00;
     text-align: center;
+}
+.tukang a{
     border-radius: 25px;
     margin-left : -70px;
     margin-top: -35px;
 }
-
-.main-container .first-container .other-first .other-second .tukang .bg-tukang{
+.bg-tukang{
     background-color: #FFF4DC;
     margin-left : -70px;
+    top: 310px;
+}
+.bg-kiri-bawah{
     height: 130px;
     width: 170px;
     position: absolute;
-    top: 330px;
     z-index: -1;
     border-radius: 25px;
 }
-
-.main-container .first-container .other-first .other-second .pramugari{
+/* Batas Tukang */
+/* Pramugari */
+.pramugari{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,37 +155,21 @@ main .title{
     margin-top: 10px;
     margin-left: -70px;
 }
+.pramugari img{
 
-.main-container .first-container .other-first .other-second .pramugari img{
-    height: 120px;
-    width: 120px;
     margin-top: 10px;
 }
-
-.main-container .first-container .other-first .other-second .pramugari a{
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    font-weight: 400;
-    padding: 4px;
-    width: 110px;
-    background-color: #FF5573;
-    text-align: center;
+.pramugari a{
     border-radius: 25px;
     margin-top: -35px;  
 }
-
-.main-container .first-container .other-first .other-second .pramugari .bg-pramugari{
+.bg-pramugari{
     background-color: #FFCED7;
-    height: 130px;
-    width: 170px;
-    position: absolute;
-    top: 480px;
-    z-index: -1;
-    border-radius: 25px;
+    top: 460px;
 }
-
-.main-container .first-container .other-first .fotografer{
+/* Batas Pramugari */
+/* Fotografer */
+.fotografer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,26 +180,24 @@ main .title{
     margin-top: -10px;
 }
 
-.main-container .first-container .other-first .fotografer img{
+/* Fotografer */
+.fotografer img{
     height: 120px;
     margin-left: 35px;
 }
-
-.main-container .first-container .other-first .fotografer h5{
+.fotografer h5{
     font-size: 15px;
     font-weight: 500;
     margin-left: 30px;
 }
-
-.main-container .first-container .other-first .fotografer p{
+.fotografer p{
     font-size: 12px;
     text-align: center;
     width: 70%;
     margin-left: 30px;
     margin-bottom: 10px;
 }
-
-.main-container .first-container .other-first .fotografer a{
+.fotografer a{
     text-decoration: none;
     color: white;
     font-size: 12px;
@@ -243,52 +209,97 @@ main .title{
     border-radius: 25px;
     margin-left: 30px;
 }
-
-.main-container .first-container .other-first .fotografer .bg-fotografer{
+.bg-fotografer{
     background-color: #E2F2FF;
     height: 280px;
     width: 200px;
     position: absolute;
-    top: 330px;
+    top: 310px;
     z-index: -1;
     border-radius: 25px;
     margin-left: 30px;
 }
-
-.second-container {
-    width: 649px;
-    height: 295px;
-    gap: 10px;
-    background-color: #D5FFDD;
+/* Batas Fotografer */
+/* Kanan Atas */
+.second-container{
     margin-top: 45px;
-    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-left: -60px;
+    padding-top: 20px;
 }
-
-.dokter {
-    padding-top: 10%;
+.sub-container1{
+    height: 280px;
+    background-color: #F4F4F4;
+    width: 400px;
     border-radius: 15px;
-    width: 390px;
-    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.isi-container-1{
+    height: 60px;
+    width: 350px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border: 1px solid #D8D6C1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+.sub-container1 img{
+    height: 50px;
+}
+.text-sub-container1{    
+    padding-left: 15px;
+}
+.sub-container1 a{
+    text-decoration: none;
+    font-size: 13px;
+    background-color: #D8D6C1;
+    padding: 2px 40px;
+    border-radius: 25px;
+    color: white;
+}
+/* Batas Kanan Atas */
+.sub-container2{
+    height: 120px;
+    background-color: #F4F4F4;
+    width: 400px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.isi-container-2{
+    height: 80px;
+    width: 180px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 1;
-    /* background-position-x: center;
-    background-position-y: center; */
-    background-color: #3279AF;
-    
+    flex-direction: row;
 }
-
-
-/* .dokter a{
+.text-container2{
+    display: flex;
+    flex-direction: column;
+}
+.sub-container2 a{
     text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-    padding: 3px;
-    background-color: #399349;
-    width: 200px;
+    font-size: 13px;
     text-align: center;
-    border-radius: 25px;
-    margin-bottom: -20px;
-} */
+    background-color: #D8D6C1;
+    padding: 8px 5px 8px 5px;
+    border-radius: 10px;
+    color: white;
+}
+@media screen and (min-width: 425px) and (max-width: 1280px) {
+    
+} 
