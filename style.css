@@ -51,14 +51,11 @@ main{
     display: flex;
     flex-direction: column;
 }
-.tentara img{
-    margin-top: 10px;
-}
+
 .tentara{
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 .layout-tentara{
     display: flex;
@@ -79,7 +76,7 @@ main{
     width: 200px;
     text-align: center;
     border-radius: 25px;
-    margin-bottom: -30px;
+    margin-bottom: -0px;
 }
 .bg-tentara{
     height: 120px;
@@ -154,7 +151,7 @@ main{
     margin-left: -70px;
 }
 .pramugari img{
-    margin-top: 16px;
+    margin-top: 9px;
 }
 .pramugari a{
     border-radius: 25px;
@@ -398,22 +395,28 @@ main{
     .fotografer img{
         height: 180px;
         margin-left: 0px;
-        margin-bottom: 30px;
-    }
-    .fotografer h5{
-        margin-left: 0px;
-        font-size: 20px;
-    }
-    .fotografer p{
-        width: 50%;
-        margin-left: 0px;
-        margin-bottom: 0px;
+        margin-top: -50px;
     }
     .fotografer a{
         width: 200px;
         margin-left: 0px;
-        position: relative;
-        top: -100px;
+        position:absolute;
+        /* margin-bottom: -122px; */
+        margin-top:75px;
+    }
+    .fotografer p{
+        width: 50%;
+        margin-left: 0px;
+        /* margin-bottom: -260px; */
+        margin-top:200px;
+        position: absolute;
+    }
+    .fotografer h5{
+        margin-left: 0px;
+        font-size: 20px;
+        postion:absolute;
+        /* margin-bottom: 100px; */
+        margin-top:10px;
     }
     .bg-fotografer{
         height: 230px;
